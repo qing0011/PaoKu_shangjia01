@@ -10,14 +10,14 @@ public class MainMenu : MonoBehaviour
     public Button resumeButton;
     public Button signInButton;
     public Button settingButton;
-    public Button storeButton;
+   // public Button storeButton;
 
     [Header("UI组件")]
-    public TMP_Text bestScoreText;
+    public Text bestScoreText;
     [SerializeField] private GameObject settingsPanel;
     public GameObject storePanel;
     public GameObject signInPanel;
-    public TMP_Text coinText;//显示金币
+    public Text coinText;//显示金币
     [Header("音效")]
     public AudioSource startGameAudioSource;//开始游戏音效
 
@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
         if (resumeButton != null) resumeButton.onClick.AddListener(OnResetHighScore);
         if (signInButton != null) signInButton.onClick.AddListener(OnSignIn);
         if (settingButton != null) settingButton.onClick.AddListener(OnOpenSettings);
-        if (storeButton != null) storeButton.onClick.AddListener(OnOpenStore);
+       // if (storeButton != null) storeButton.onClick.AddListener(OnOpenStore);
 
        
 
